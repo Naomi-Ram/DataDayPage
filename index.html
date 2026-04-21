@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataDay 2026 — Universidad del Caribe</title>
+  <meta name="description" content="DataDay 2026: Conferencias, talleres y networking en la Universidad del Caribe, Cancún. 29 de abril, 10:00–18:00 hrs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-data">DATA</span><span class="logo-day">DAY</span>
+        <span class="logo-year">2026</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#conferencias">Conferencias</a></li>
+        <li><a href="#talleres">Talleres</a></li>
+        <li><a href="#feria">Feria</a></li>
+        <li><a href="#comunidades">Comunidades</a></li>
+        <li><a href="#patrocinadores">Sponsors</a></li>
+      </ul>
+      <a href="#horario" class="nav-cta">Ver Programa</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hex-bg" aria-hidden="true"></div>
+    <div class="hero-particles" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-logo-placeholder placeholder-box placeholder-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v4m0 4h.01"/></svg>
+        <span>Logo DataDay</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-data">DATA</span><span class="title-day">DAY</span>
+      </h1>
+      <p class="hero-subtitle">Conferencias · Talleres · Networking</p>
+      <div class="hero-chips">
+        <div class="chip"><span class="chip-icon">📅</span> Jueves 29 de abril</div>
+        <div class="chip"><span class="chip-icon">⏰</span> 10:00 – 18:00 hrs</div>
+        <div class="chip"><span class="chip-icon">📍</span> Auditorio Ingenierías</div>
+      </div>
+      <a href="#horario" class="glow-btn hero-cta">Ver Programa ↓</a>
+    </div>
+    <div class="hero-carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 1</span></div>
+        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 2</span></div>
+        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 3</span></div>
+        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 4</span></div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE EL EVENTO ========== -->
+  <section id="sobre-evento" class="section sobre-evento">
+    <h2 class="section-title animate-on-scroll">Sobre el Evento</h2>
+    <div class="features-grid">
+      <div class="feature-card glass animate-on-scroll">
+        <div class="feature-icon">🎤</div>
+        <h3>Conferencias</h3>
+        <p>Expertos de la industria y la academia compartiendo conocimiento de vanguardia en datos, IA y tecnología.</p>
+      </div>
+      <div class="feature-card glass animate-on-scroll">
+        <div class="feature-icon">🛠️</div>
+        <h3>Talleres</h3>
+        <p>Aprende haciendo con sesiones prácticas guiadas por profesionales. Pon a prueba tus habilidades.</p>
+      </div>
+      <div class="feature-card glass animate-on-scroll">
+        <div class="feature-icon">🤝</div>
+        <h3>Networking</h3>
+        <p>Conecta con profesionales, comunidades tech y compañeros apasionados por la tecnología.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HORARIO ========== -->
+  <section id="horario" class="section horario">
+    <h2 class="section-title animate-on-scroll">Programa del Día</h2>
+    <p class="section-desc animate-on-scroll">Jueves 29 de abril, 2026 — Auditorio Ingenierías</p>
+    <div class="timeline">
+      <div class="timeline-item animate-on-scroll" data-type="especial">
+        <div class="timeline-time">10:00</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-especial">⭐ Especial</span>
+          <h3>Inauguración</h3>
+          <p>Ceremonia de apertura del DataDay 2026</p>
+          <span class="timeline-location">📍 Auditorio Principal</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="conferencia">
+        <div class="timeline-time">10:30</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
+          <h3>El Futuro de la Inteligencia Artificial</h3>
+          <p>Panorama actual y tendencias en IA aplicada</p>
+          <span class="timeline-location">📍 Auditorio Principal</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="conferencia">
+        <div class="timeline-time">11:30</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
+          <h3>Big Data en la Industria</h3>
+          <p>Casos de éxito y aplicaciones reales de ciencia de datos</p>
+          <span class="timeline-location">📍 Auditorio Principal</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="taller">
+        <div class="timeline-time">12:30</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-taller">🛠️ Taller</span>
+          <h3>Introducción a Python para Datos</h3>
+          <p>Sesión práctica de análisis de datos con Python y Pandas</p>
+          <span class="timeline-location">📍 Laboratorio de Cómputo</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="especial">
+        <div class="timeline-time">14:00</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-especial">☕ Receso</span>
+          <h3>Comida y Networking</h3>
+          <p>Espacio para comer, conocer gente y visitar la feria de proyectos</p>
+          <span class="timeline-location">📍 Explanada</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="taller">
+        <div class="timeline-time">15:00</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-taller">🛠️ Taller</span>
+          <h3>Dashboards con Power BI</h3>
+          <p>Crea visualizaciones interactivas para análisis de negocios</p>
+          <span class="timeline-location">📍 Laboratorio de Cómputo</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="conferencia">
+        <div class="timeline-time">16:30</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
+          <h3>Ciberseguridad y Protección de Datos</h3>
+          <p>Mejores prácticas para proteger la información en la era digital</p>
+          <span class="timeline-location">📍 Auditorio Principal</span>
+        </div>
+      </div>
+      <div class="timeline-item animate-on-scroll" data-type="especial">
+        <div class="timeline-time">17:30</div>
+        <div class="timeline-card glass">
+          <span class="timeline-badge badge-especial">⭐ Clausura</span>
+          <h3>Ceremonia de Clausura</h3>
+          <p>Premiaciones, agradecimientos y cierre del evento</p>
+          <span class="timeline-location">📍 Auditorio Principal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONFERENCIAS ========== -->
+  <section id="conferencias" class="section conferencias">
+    <h2 class="section-title animate-on-scroll">Conferencias & Ponencias</h2>
+    <p class="section-desc animate-on-scroll">Conoce a los expertos que compartirán su conocimiento</p>
+    <div class="speakers-grid">
+      <div class="speaker-card glass animate-on-scroll">
+        <div class="speaker-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+        <div class="speaker-info">
+          <h3>Ponente 1</h3>
+          <p class="speaker-role">Cargo · Empresa</p>
+          <p class="speaker-talk">"El Futuro de la Inteligencia Artificial"</p>
+          <span class="speaker-time">🕐 10:30 hrs</span>
+        </div>
+      </div>
+      <div class="speaker-card glass animate-on-scroll">
+        <div class="speaker-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+        <div class="speaker-info">
+          <h3>Ponente 2</h3>
+          <p class="speaker-role">Cargo · Empresa</p>
+          <p class="speaker-talk">"Big Data en la Industria"</p>
+          <span class="speaker-time">🕐 11:30 hrs</span>
+        </div>
+      </div>
+      <div class="speaker-card glass animate-on-scroll">
+        <div class="speaker-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+        <div class="speaker-info">
+          <h3>Ponente 3</h3>
+          <p class="speaker-role">Cargo · Empresa</p>
+          <p class="speaker-talk">"Ciberseguridad y Protección de Datos"</p>
+          <span class="speaker-time">🕐 16:30 hrs</span>
+        </div>
+      </div>
+      <div class="speaker-card glass animate-on-scroll">
+        <div class="speaker-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+        <div class="speaker-info">
+          <h3>Ponente 4</h3>
+          <p class="speaker-role">Cargo · Empresa</p>
+          <p class="speaker-talk">"Machine Learning Aplicado"</p>
+          <span class="speaker-time">🕐 Por confirmar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TALLERES ========== -->
+  <section id="talleres" class="section talleres">
+    <h2 class="section-title animate-on-scroll">Talleres Prácticos</h2>
+    <p class="section-desc animate-on-scroll">Aprende haciendo — sesiones hands-on con expertos</p>
+    <div class="workshops-grid">
+      <div class="workshop-card glass animate-on-scroll">
+        <div class="workshop-header">
+          <div class="workshop-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+          <div class="workshop-badges">
+            <span class="badge badge-nivel badge-basico">Básico</span>
+            <span class="badge badge-req">💻 Llevar Laptop</span>
+          </div>
+        </div>
+        <div class="workshop-info">
+          <h3>Introducción a Python para Datos</h3>
+          <p>Aprende los fundamentos del análisis de datos usando Python, Pandas y Jupyter Notebooks.</p>
+          <div class="workshop-meta">
+            <span>🕐 12:30 hrs</span>
+            <span>👥 Cupo: 30</span>
+            <span>📍 Lab. Cómputo</span>
+          </div>
+        </div>
+      </div>
+      <div class="workshop-card glass animate-on-scroll">
+        <div class="workshop-header">
+          <div class="workshop-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+          <div class="workshop-badges">
+            <span class="badge badge-nivel badge-intermedio">Intermedio</span>
+            <span class="badge badge-req">💻 Llevar Laptop</span>
+          </div>
+        </div>
+        <div class="workshop-info">
+          <h3>Dashboards con Power BI</h3>
+          <p>Crea visualizaciones interactivas y dashboards profesionales para análisis de negocios.</p>
+          <div class="workshop-meta">
+            <span>🕐 15:00 hrs</span>
+            <span>👥 Cupo: 25</span>
+            <span>📍 Lab. Cómputo</span>
+          </div>
+        </div>
+      </div>
+      <div class="workshop-card glass animate-on-scroll">
+        <div class="workshop-header">
+          <div class="workshop-photo placeholder-box placeholder-avatar"><span>Foto</span></div>
+          <div class="workshop-badges">
+            <span class="badge badge-nivel badge-avanzado">Avanzado</span>
+            <span class="badge badge-cupo-limitado">🔥 Cupo Limitado</span>
+          </div>
+        </div>
+        <div class="workshop-info">
+          <h3>Deploy de Modelos de ML</h3>
+          <p>Lleva tu modelo de Machine Learning a producción usando Docker y servicios cloud.</p>
+          <div class="workshop-meta">
+            <span>🕐 Por confirmar</span>
+            <span>👥 Cupo: 15</span>
+            <span>📍 Lab. Cómputo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FERIA DE PROYECTOS ========== -->
+  <section id="feria" class="section feria">
+    <div class="feria-bg" aria-hidden="true"></div>
+    <div class="feria-content">
+      <h2 class="section-title animate-on-scroll">Feria de Proyectos</h2>
+      <div class="feria-layout animate-on-scroll">
+        <div class="feria-text">
+          <p class="feria-description">
+            Explora proyectos innovadores creados por estudiantes de la Universidad del Caribe. 
+            Desde aplicaciones de inteligencia artificial hasta soluciones de análisis de datos, 
+            la feria es tu oportunidad de ver el talento en acción.
+          </p>
+          <ul class="feria-highlights">
+            <li>🎯 Stands de exhibición de proyectos estudiantiles</li>
+            <li>🏆 Premiación al mejor proyecto</li>
+            <li>💡 Demostraciones en vivo de prototipos</li>
+            <li>🤝 Retroalimentación directa de jueces y visitantes</li>
+          </ul>
+          <a href="#" class="glow-btn">Registra tu Proyecto</a>
+        </div>
+        <div class="feria-image placeholder-box placeholder-feria">
+          <span>Flyer Feria de Proyectos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMUNIDADES ========== -->
+  <section id="comunidades" class="section comunidades">
+    <h2 class="section-title animate-on-scroll">Comunidades Invitadas</h2>
+    <p class="section-desc animate-on-scroll">Conecta con las comunidades tech de la región</p>
+    <div class="communities-grid">
+      <div class="community-card glass animate-on-scroll">
+        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
+        <h3>Comunidad Tech 1</h3>
+        <p>Comunidad de desarrollo de software y tecnología en Cancún</p>
+      </div>
+      <div class="community-card glass animate-on-scroll">
+        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
+        <h3>Comunidad Tech 2</h3>
+        <p>Grupo de entusiastas de datos e inteligencia artificial</p>
+      </div>
+      <div class="community-card glass animate-on-scroll">
+        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
+        <h3>Comunidad Tech 3</h3>
+        <p>Red de profesionales de ciberseguridad del sureste</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PATROCINADORES ========== -->
+  <section id="patrocinadores" class="section patrocinadores">
+    <h2 class="section-title animate-on-scroll">Gracias a Nuestros Patrocinadores</h2>
+    <div class="sponsors-tier animate-on-scroll">
+      <h3 class="tier-title tier-gold">✦ Oro</h3>
+      <div class="sponsors-row">
+        <div class="sponsor-logo placeholder-box placeholder-sponsor"><span>Sponsor 1</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor"><span>Sponsor 2</span></div>
+      </div>
+    </div>
+    <div class="sponsors-tier animate-on-scroll">
+      <h3 class="tier-title tier-silver">✦ Plata</h3>
+      <div class="sponsors-row">
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 3</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 4</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 5</span></div>
+      </div>
+    </div>
+    <div class="sponsors-tier animate-on-scroll">
+      <h3 class="tier-title tier-bronze">✦ Bronce</h3>
+      <div class="sponsors-row">
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S6</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S7</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S8</span></div>
+        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S9</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo-placeholder placeholder-box placeholder-logo-sm"><span>Logo Unicaribe</span></div>
+        <div class="footer-title">
+          <span class="logo-data">DATA</span><span class="logo-day">DAY</span>
+          <span class="logo-year">2026</span>
+        </div>
+        <p>Universidad del Caribe · Cancún, Quintana Roo, México</p>
+      </div>
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#horario">Horario</a>
+        <a href="#conferencias">Conferencias</a>
+        <a href="#talleres">Talleres</a>
+        <a href="#feria">Feria</a>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DataDay — Universidad del Caribe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
