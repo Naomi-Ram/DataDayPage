@@ -62,8 +62,8 @@ if (track) {
   });
   function goToSlide(index) {
     current = index;
-    const slideWidth = slides[0].offsetWidth + 20; // width + gap
-    track.style.transform = `translateX(-${current * slideWidth}px)`;
+    // Each slide is flex: 0 0 100% so we translate by multiples of 100%
+    track.style.transform = `translateX(-${current * 100}%)`;
     dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
       d.classList.toggle('active', i === current);
     });
