@@ -56,7 +56,9 @@ img{max-width:100%;display:block}
 
 /* ===== HERO LOGO IMAGE ===== */
 .hero-logo-wrapper{margin:0 auto 1.5rem;text-align:center}
-.hero-logo-img{max-width:220px;width:100%;height:auto;filter:drop-shadow(0 0 24px rgba(0,229,255,.35));margin:0 auto}
+.hero-logo-img{max-width:400px;width:100%;height:auto;margin:0 auto;
+  filter:drop-shadow(0 0 20px rgba(0,229,255,.25))}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 /* ===== FOOTER LOGO IMAGE ===== */
 .footer-uni-logo{max-width:140px;height:auto;filter:brightness(0) invert(1);opacity:.9;margin-bottom:.5rem}
@@ -76,7 +78,13 @@ img{max-width:100%;display:block}
 .hero-content{position:relative;z-index:1;margin-bottom:3rem}
 .hero-title{font-family:var(--font-display);font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:4px;margin-bottom:.5rem;line-height:1.1}
 .title-data{color:var(--text-white)}.title-day{color:var(--accent-cyan);text-shadow:0 0 40px rgba(0,229,255,.4)}
-.hero-subtitle{font-size:clamp(1rem,2.5vw,1.3rem);color:var(--accent-teal);letter-spacing:3px;margin-bottom:2rem}
+.hero-subtitle{font-size:clamp(1.1rem,2.5vw,1.4rem);color:var(--accent-cyan);letter-spacing:4px;margin-bottom:2rem;font-weight:600;
+  text-shadow:0 0 10px rgba(0,229,255,.6),0 0 30px rgba(0,229,255,.4),0 0 60px rgba(0,229,255,.2);
+  animation:subtitleGlow 3s ease-in-out infinite}
+@keyframes subtitleGlow{
+  0%,100%{text-shadow:0 0 10px rgba(0,229,255,.6),0 0 30px rgba(0,229,255,.4),0 0 60px rgba(0,229,255,.2)}
+  50%{text-shadow:0 0 15px rgba(0,229,255,.8),0 0 40px rgba(0,229,255,.6),0 0 80px rgba(0,229,255,.3)}
+}
 .hero-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:2.5rem}
 .chip{background:rgba(30,58,95,.6);border:1px solid rgba(0,229,255,.2);padding:10px 20px;border-radius:50px;font-size:.9rem;display:flex;align-items:center;gap:8px;backdrop-filter:blur(6px)}
 .hero-carousel{position:relative;z-index:1;width:100%;max-width:900px;overflow:hidden;margin:0 auto}
