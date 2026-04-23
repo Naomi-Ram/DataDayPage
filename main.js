@@ -90,3 +90,74 @@ if (particlesContainer) {
     particlesContainer.appendChild(p);
   }
 }
+
+// ===== MODAL / POP-UP SYSTEM =====
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+const modalEls = {
+  badge: document.getElementById('modalBadge'),
+  title: document.getElementById('modalTitle'),
+  speaker: document.getElementById('modalSpeaker'),
+  role: document.getElementById('modalRole'),
+  bio: document.getElementById('modalBio'),
+  time: document.getElementById('modalTime'),
+  location: document.getElementById('modalLocation'),
+};
+
+function openModal(card) {
+  modalEls.badge.textContent = card.dataset.modalType || '';
+  modalEls.title.textContent = card.dataset.modalTitle || '';
+  modalEls.speaker.textContent = card.dataset.modalSpeaker || '';
+  modalEls.role.textContent = card.dataset.modalRole || '';
+  modalEls.bio.textContent = card.dataset.modalBio || '';
+  modalEls.time.textContent = card.dataset.modalTime ? '🕐 ' + card.dataset.modalTime : '';
+  modalEls.location.textContent = card.dataset.modalLocation ? '📍 ' + card.dataset.modalLocation : '';
+  modalOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.clickable[data-modal-title]').forEach(card => {
+  card.addEventListener('click', () => openModal(card));
+});
+if (modalClose) modalClose.addEventListener('click', closeModal);
+if (modalOverlay) modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+// ===== 3D TILT EFFECT (desktop only) =====
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -6;
+      const rotateY = ((x - centerX) / centerX) * 6;
+      card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      card.style.boxShadow = `0 12px 40px rgba(0,229,255,.18)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.boxShadow = '';
+    });
+  });
+}
+
+// ===== SCROLL INDICATOR: hide after scrolling =====
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+  window.addEventListener('scroll', () => {
+    scrollIndicator.style.opacity = window.scrollY > 100 ? '0' : '0.7';
+    scrollIndicator.style.pointerEvents = window.scrollY > 100 ? 'none' : 'auto';
+  }, { passive: true });
+}
