@@ -153,6 +153,51 @@ if (window.matchMedia('(hover: hover)').matches) {
   });
 }
 
+// ===== FLOATING BACK BUTTON LOGIC =====
+const backToTimelineBtn = document.getElementById('backToTimelineBtn');
+let savedScrollPosition = null;
+
+if (backToTimelineBtn) {
+  // Show button when clicking a timeline card link
+  document.querySelectorAll('a.timeline-card').forEach(link => {
+    link.addEventListener('click', () => {
+      // Small delay to let the smooth scroll happen first, then we record the position where they came from
+      // Actually, it's better to just save the current position right before jumping
+      savedScrollPosition = window.scrollY;
+      
+      // Delay showing the button so it doesn't appear awkwardly during the scroll
+      setTimeout(() => {
+        backToTimelineBtn.classList.add('visible');
+      }, 500);
+    });
+  });
+
+  // Handle clicking the back button
+  backToTimelineBtn.addEventListener('click', () => {
+    if (savedScrollPosition !== null) {
+      window.scrollTo({
+        top: savedScrollPosition,
+        behavior: 'smooth'
+      });
+      backToTimelineBtn.classList.remove('visible');
+      savedScrollPosition = null;
+    }
+  });
+
+  // Hide button if user manually scrolls back up to the horario section
+  window.addEventListener('scroll', () => {
+    const horarioSection = document.getElementById('horario');
+    if (horarioSection && backToTimelineBtn.classList.contains('visible')) {
+      const rect = horarioSection.getBoundingClientRect();
+      // If the timeline section is currently visible in the viewport or above it
+      if (rect.bottom > 0) {
+         backToTimelineBtn.classList.remove('visible');
+         savedScrollPosition = null;
+      }
+    }
+  }, { passive: true });
+}
+
 // ===== SCROLL INDICATOR: hide after scrolling =====
 const scrollIndicator = document.querySelector('.scroll-indicator');
 if (scrollIndicator) {
