@@ -59,10 +59,16 @@
     </div>
     <div class="hero-carousel">
       <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 1</span></div>
-        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 2</span></div>
-        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 3</span></div>
-        <div class="carousel-slide placeholder-box placeholder-flyer"><span>Flyer 4</span></div>
+        <!-- Reemplaza "src/flyer1.jpg" con la ruta real de tus imágenes -->
+        <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
+          <img src="src/taller1.png" alt="Flyer Taller 1" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+        </a>
+        <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
+          <img src="src/taller2.png" alt="Flyer Taller 2" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+        </a>
+        <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
+          <img src="src/taller3.png" alt="Flyer Taller 3" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+        </a>
       </div>
       <div class="carousel-dots" id="carouselDots"></div>
     </div>
@@ -233,7 +239,8 @@
     <p class="section-desc animate-on-scroll">Conoce a los expertos que compartirán su conocimiento</p>
     <div class="speakers-grid">
       <div class="speaker-card glass animate-on-scroll clickable tilt-card" data-modal-type="🎤 Conferencia" data-modal-title="Visualización de datos multidimensionales con redes neuronales" data-modal-speaker="Dr. Antonio Neme" data-modal-role="Investigador y Experto en Redes Neuronales" data-modal-bio="Exploración profunda en técnicas avanzadas de visualización de datos de alta dimensionalidad utilizando arquitecturas de redes neuronales como autoencoders y t-SNE neuronal. Se abordarán casos de uso en bioinformática e ingeniería." data-modal-time="10:10 hrs" data-modal-location="Auditorio Ingenierías">
-        <div class="speaker-photo placeholder-box placeholder-avatar"><span>AN</span></div>
+        <!-- Reemplaza "src/antonio.jpg" con la ruta de tu fotografía -->
+        <img src="src/neme.png" alt="Dr. Antonio Neme" class="speaker-photo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <div class="speaker-info">
           <h3>Dr. Antonio Neme</h3>
           <p class="speaker-role">Investigador y Experto en Redes Neuronales</p>
@@ -243,7 +250,8 @@
         </div>
       </div>
       <div class="speaker-card glass animate-on-scroll clickable tilt-card" data-modal-type="🎤 Conferencia" data-modal-title="Comunidad Tecno" data-modal-speaker="José Dimas" data-modal-role="Líder de Comunidad Tecno" data-modal-bio="José Dimas comparte cómo las comunidades tecnológicas impulsan el desarrollo profesional, crean redes de apoyo y aceleran la innovación en la región sureste de México." data-modal-time="16:00 hrs" data-modal-location="Auditorio G">
-        <div class="speaker-photo placeholder-box placeholder-avatar"><span>JD</span></div>
+        <!-- Reemplaza "src/jose.jpg" con la ruta de tu fotografía -->
+        <img src="src/dimas.png" alt="José Dimas" class="speaker-photo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <div class="speaker-info">
           <h3>José Dimas</h3>
           <p class="speaker-role">Líder de Comunidad Tecno</p>
@@ -305,7 +313,7 @@
     <div class="workshops-grid">
       <div class="workshop-card glass animate-on-scroll">
         <div class="workshop-header">
-          <div class="workshop-photo placeholder-box placeholder-avatar"><span>AN</span></div>
+          <img src="src/neme.png" alt="Antonio Neme" class="workshop-photo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
           <div class="workshop-badges">
             <span class="badge badge-nivel badge-avanzado">Avanzado</span>
             <span class="badge badge-req">💻 Llevar Laptop</span>
