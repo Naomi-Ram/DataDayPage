@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DataDay 2026 — Universidad del Caribe</title>
-  <meta name="description" content="DataDay 2026: Conferencias, talleres y networking en la Universidad del Caribe, Cancún. 30 de abril, 10:00–18:00 hrs.">
+  <meta name="description"
+    content="DataDay 2026: Conferencias, talleres y networking en la Universidad del Caribe, Cancún. 30 de abril, 10:00–18:00 hrs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
@@ -29,7 +34,7 @@
         <li><a href="#feria">Feria</a></li>
         <li><a href="#rally">Rally</a></li>
         <li><a href="#comunidades">Comunidades</a></li>
-        <li><a href="#patrocinadores">Sponsors</a></li>
+
         <li class="nav-cta-item"><a href="#horario" class="nav-cta">Ver Programa</a></li>
       </ul>
       <a href="#horario" class="nav-cta">Ver Programa</a>
@@ -51,7 +56,11 @@
         <div class="chip"><span class="chip-icon">⏰</span> 10:00 – 18:00 hrs</div>
         <div class="chip"><span class="chip-icon">📍</span> Auditorio Ingenierías</div>
       </div>
-      <a href="#horario" class="glow-btn hero-cta">Ver Programa ↓</a>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://forms.gle/2RY7MvEENbRVBCnx9" target="_blank" class="glow-btn hero-cta"
+          style="background: linear-gradient(135deg, #7c4dff, var(--accent-cyan));">Registro General</a>
+        <a href="#horario" class="glow-btn hero-cta">Ver Programa ↓</a>
+      </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">
       <span>Scroll</span>
@@ -59,15 +68,25 @@
     </div>
     <div class="hero-carousel">
       <div class="carousel-track" id="carouselTrack">
-        <!-- Reemplaza "src/flyer1.jpg" con la ruta real de tus imágenes -->
+        <div class="carousel-slide">
+          <img src="src/Carrusel/Conferencia%20Dr.%20Antonio%20Neme%20(Flyer)_2026.png" alt="Flyer Conferencia Neme"
+            style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+        </div>
+        <div class="carousel-slide">
+          <img src="src/Carrusel/Conferencia%20Jos%C3%A9%20Dimas%20(Flyer)_2026.png" alt="Flyer Conferencia Dimas"
+            style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+        </div>
         <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
-          <img src="src/taller1.png" alt="Flyer Taller 1" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+          <img src="src/Carrusel/taller1.png" alt="Flyer Taller 1"
+            style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
         </a>
         <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
-          <img src="src/taller2.png" alt="Flyer Taller 2" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+          <img src="src/Carrusel/taller2.png" alt="Flyer Taller 2"
+            style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
         </a>
         <a href="#talleres" class="carousel-slide" style="display: block; text-decoration: none; text-align: center;">
-          <img src="src/taller3.png" alt="Flyer Taller 3" style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
+          <img src="src/Carrusel/taller3.png" alt="Flyer Taller 3"
+            style="width: 90%; max-width: 400px; margin: 0 auto; display: block; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
         </a>
       </div>
       <div class="carousel-dots" id="carouselDots"></div>
@@ -114,13 +133,13 @@
       <!-- 10:10 -->
       <div class="timeline-item animate-on-scroll" data-type="conferencia">
         <div class="timeline-time">10:10</div>
-        <a href="#conferencias" class="timeline-card glass clickable" style="display:block;">
+        <a href="#conferencias" onclick="return navigateToSection('#conferencias');" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
           <h3>Visualización de datos multidimensionales con redes neuronales</h3>
           <p>Ponente: <strong>Dr. Antonio Neme</strong>.
-          <p>Una exploración profunda en técnicas avanzadas de visualización.</p>
-          <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
-          <span class="card-expand-hint">Ver detalle ↓</span>
+            <p>Una exploración profunda en técnicas avanzadas de visualización.</p>
+            <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
+            <span class="card-expand-hint">Ver detalle ↓</span>
         </a>
       </div>
       <!-- 11:00 -->
@@ -137,13 +156,13 @@
       <!-- 11:00 (Taller simultáneo) -->
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">11:00</div>
-        <a href="#talleres" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-1" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-1');" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 1. Aplicaciones de la visualización de datos multidimensionales con redes neuronales</h3>
           <p>Instructor: <strong>Dr. Antonio Neme.</strong>
-          <p>Aplicaciones prácticas basadas en la conferencia magistral otorgada por el Dr. Antonio Neme</p>
-          <span class="timeline-location">📍 LTI (Laboratorio de Tecnologías de Información)</span>
-          <span class="card-expand-hint">Ver detalle ↓</span>
+            <p>Aplicaciones prácticas basadas en la conferencia magistral otorgada por el Dr. Antonio Neme</p>
+            <span class="timeline-location">📍 LTI (Laboratorio de Tecnologías de Información)</span>
+            <span class="card-expand-hint">Ver detalle ↓</span>
         </a>
       </div>
       <!-- 11:50 (Taller simultáneo) -->
@@ -153,17 +172,17 @@
           <span class="timeline-badge badge-especial">☕ Coffe Break</span>
           <h3>Coffe Break</h3>
           <p>Espacio de receso y convivencia entre alumnos y colaboradores.</p>
-          <span class="timeline-location">📍 Pasillo del Auditorio G</span> 
+          <span class="timeline-location">📍 Pasillo del Auditorio G</span>
           <span class="card-expand-hint">Ver detalle ↓</span>
         </a>
       </div>
       <!-- 12:00 (Talleres simultáneos) -->
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">12:00</div>
-        <a href="#talleres" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-2" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-2');" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 2. Interpretación de modelos de aprendizaje automático con SHAP</h3>
-          <p>Instructora: <strong>Candy Sansores.</strong>
+          <p>Instructora: <strong>Dra. Candy Sansores.</strong></p>
           <p>Sesión enfocada en manejo y análisis de datos.</p>
           <span class="timeline-location">📍 LAD (Laboratorio de análisis de datos)</span>
           <span class="card-expand-hint">Ver detalle ↓</span>
@@ -171,10 +190,10 @@
       </div>
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">12:00</div>
-        <a href="#talleres" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-3" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-3');" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 3. Del dato a la decisión: aplicaciones del Aprendizaje supervisado</h3>
-          <p>Instructor: <strong>Fernando Gómez.</strong>
+          <p>Instructor: <strong>Dr. Fernando Gómez.</strong></p>
           <p>Aplicaciones prácticas del aprendizaje supervisado.</p>
           <span class="timeline-location">📍 LIS (Laboratorio de Ingeniería de Software)</span>
           <span class="card-expand-hint">Ver detalle ↓</span>
@@ -193,39 +212,43 @@
       <!-- 15:00 -->
       <div class="timeline-item animate-on-scroll" data-type="especial">
         <div class="timeline-time">14:30</div>
-        <div class="timeline-card glass">
+        <a href="#rally" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-especial">🏃 Rally</span>
           <h3>THE DATA RACE</h3>
           <p>Rally temático. Competencia de retos físicos y técnicos por equipos.</p>
           <span class="timeline-location">📍 Pasillo del auditorio G (Edificio G) </span>
-        </div>
+          <span class="card-expand-hint">Ver detalle ↓</span>
+        </a>
       </div>
       <!-- 16:00 -->
       <div class="timeline-item animate-on-scroll" data-type="conferencia">
         <div class="timeline-time">16:00</div>
-        <a href="#conferencias" class="timeline-card glass clickable" style="display:block;">
+        <a href="#conf-dimas"
+          onclick="return navigateToSection(window.innerWidth >= 768 ? '#conferencias' : '#conf-dimas');"
+          class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
           <h3>De datos a decisiones: cómo los AI agents están cambiando el trabajo del desarrollador.</h3>
           <p>Ponente: <strong>Ing. José Dimas.</strong>
-          <p>El impacto de agentes de IA en el desarrollo tecnológico, la industria y la percepción del desarrollador con su entorno.</p>
-          <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
-          <span class="card-expand-hint">Ver detalle ↓</span>
+            <p>El impacto de agentes de IA en el desarrollo tecnológico, la industria y la percepción del desarrollador
+              con su entorno.</p>
+            <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
+            <span class="card-expand-hint">Ver detalle ↓</span>
         </a>
       </div>
       <!-- 17:00 -->
       <div class="timeline-item animate-on-scroll" data-type="conferencia">
         <div class="timeline-time">17:00</div>
-        <a href="#conferencias" class="timeline-card glass clickable" style="display:block;">
+        <a href="#panel-egresados" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-conferencia">🎤 Panel</span>
           <h3>Panel de Egresados</h3>
-          <p>Invitados: 
+          <p>Invitados:
             <ul>
               <li><strong>• Ing. Diana Gutierrez</strong></li>
               <li><strong>• Ing. Jonathan Barrera</strong></li>
               <li><strong>• Ing. Kevin Raymond</strong></li>
               <li><strong>• Ing. Sofia Ruvalcaba</strong></li>
             </ul>
-          </p>       
+          </p>
           <p>Egresados de la carrera de Ingeniería de Datos dan testimonio de su experiencia en la industria.</p>
           <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
           <span class="card-expand-hint">Ver detalle ↓</span>
@@ -237,7 +260,8 @@
         <div class="timeline-card glass">
           <span class="timeline-badge badge-especial">⭐ Clausura</span>
           <h3>Cierre</h3>
-          <p>Agradecimientos y clausura del evento por la Dra. Laura Margarita Hernández y el Mtro. Francisco Manzano.</p>
+          <p>Agradecimientos y clausura del evento por la Dra. Laura Margarita Hernández y el Mtro. Francisco Manzano.
+          </p>
           <span class="timeline-location">📍 Auditorio G (Edificio de Ingenierías)</span>
         </div>
       </div>
@@ -249,9 +273,15 @@
     <h2 class="section-title animate-on-scroll">Conferencias & Ponencias</h2>
     <p class="section-desc animate-on-scroll">Conoce a los expertos que compartirán su conocimiento</p>
     <div class="speakers-grid">
-      <div class="speaker-card glass animate-on-scroll clickable tilt-card" data-modal-type="🎤 Conferencia" data-modal-title="Visualización de datos multidimensionales con redes neuronales" data-modal-speaker="Dr. Antonio Neme" data-modal-role="Investigador y Experto en Redes Neuronales" data-modal-bio="Exploración profunda en técnicas avanzadas de visualización de datos de alta dimensionalidad utilizando arquitecturas de redes neuronales como autoencoders y t-SNE neuronal. Se abordarán casos de uso en bioinformática e ingeniería." data-modal-time="10:10 hrs" data-modal-location="Auditorio Ingenierías">
+      <div id="conf-neme" class="speaker-card glass animate-on-scroll clickable tilt-card"
+        data-modal-type="🎤 Conferencia"
+        data-modal-title="Visualización de datos multidimensionales con redes neuronales"
+        data-modal-speaker="Dr. Antonio Neme" data-modal-role="Investigador y Experto en Redes Neuronales"
+        data-modal-bio="Exploración profunda en técnicas avanzadas de visualización de datos de alta dimensionalidad utilizando arquitecturas de redes neuronales como autoencoders y t-SNE neuronal. Se abordarán casos de uso en bioinformática e ingeniería."
+        data-modal-time="10:10 hrs" data-modal-location="Auditorio Ingenierías">
         <!-- Reemplaza "src/antonio.jpg" con la ruta de tu fotografía -->
-        <img src="src/neme.png" alt="Dr. Antonio Neme" class="speaker-photo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <img src="src/neme.png" alt="Dr. Antonio Neme" class="speaker-photo"
+          style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <div class="speaker-info">
           <h3>Dr. Antonio Neme</h3>
           <p class="speaker-role">Investigador y Experto en Redes Neuronales</p>
@@ -260,9 +290,14 @@
           <span class="card-expand-hint">+ Ver más</span>
         </div>
       </div>
-      <div class="speaker-card glass animate-on-scroll clickable tilt-card" data-modal-type="🎤 Conferencia" data-modal-title="Comunidad Tecno" data-modal-speaker="José Dimas" data-modal-role="Líder de Comunidad Tecno" data-modal-bio="José Dimas comparte cómo las comunidades tecnológicas impulsan el desarrollo profesional, crean redes de apoyo y aceleran la innovación en la región sureste de México." data-modal-time="16:00 hrs" data-modal-location="Auditorio G">
+      <div id="conf-dimas" class="speaker-card glass animate-on-scroll clickable tilt-card"
+        data-modal-type="🎤 Conferencia" data-modal-title="Comunidad Tecno" data-modal-speaker="José Dimas"
+        data-modal-role="Líder de Comunidad Tecno"
+        data-modal-bio="José Dimas comparte cómo las comunidades tecnológicas impulsan el desarrollo profesional, crean redes de apoyo y aceleran la innovación en la región sureste de México."
+        data-modal-time="16:00 hrs" data-modal-location="Auditorio G">
         <!-- Reemplaza "src/jose.jpg" con la ruta de tu fotografía -->
-        <img src="src/dimas.png" alt="José Dimas" class="speaker-photo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <img src="src/dimas.png" alt="José Dimas" class="speaker-photo"
+          style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <div class="speaker-info">
           <h3>José Dimas</h3>
           <p class="speaker-role">Líder de Comunidad Tecno</p>
@@ -274,43 +309,44 @@
     </div>
 
     <!-- ===== PANEL DE EGRESADOS (dentro de conferencias) ===== -->
-    <div class="panel-egresados animate-on-scroll">
+    <div id="panel-egresados" class="panel-egresados animate-on-scroll">
       <div class="panel-header">
         <span class="panel-badge">🎓 Panel Especial · 17:00 hrs</span>
         <h3 class="panel-title">Spoiler del futuro: egresados en la industria</h3>
-        <p class="panel-subtitle">Moderado por <strong>Santiago Cheluja</strong></p>
+        <p class="panel-subtitle">Conoce de primera mano la experiencia, retos y aprendizajes de nuestros egresados al
+          enfrentarse al mundo laboral.</p>
       </div>
       <div class="panel-grid">
         <div class="panelist-card glass animate-on-scroll">
-          <div class="panelist-photo placeholder-box placeholder-avatar"><span>JC</span></div>
+          <div class="panelist-photo placeholder-box placeholder-avatar"><span>SR</span></div>
           <div class="panelist-info">
-            <h4>Jasmin Coba Candanedo</h4>
-            <p class="panelist-role">Analista de Datos · Proyecto Tren Maya</p>
+            <h4>Sofia Ruvalcaba de la Noval</h4>
+            <p class="panelist-role">Full Stack Developer · IMPLAN de Cancún</p>
             <span class="panelist-tag">Egresada IDIO</span>
           </div>
         </div>
         <div class="panelist-card glass animate-on-scroll">
-          <div class="panelist-photo placeholder-box placeholder-avatar"><span>FG</span></div>
+          <div class="panelist-photo placeholder-box placeholder-avatar"><span>KR</span></div>
           <div class="panelist-info">
-            <h4>Fernando Gómez Perera</h4>
-            <p class="panelist-role">Senior Data Engineer · Databricks, PySpark & AWS</p>
+            <h4>Kevin Raymond Hernandez</h4>
+            <p class="panelist-role">Data Engineer & BI · Grupo Ultra</p>
             <span class="panelist-tag">Egresado IDIO</span>
           </div>
         </div>
         <div class="panelist-card glass animate-on-scroll">
-          <div class="panelist-photo placeholder-box placeholder-avatar"><span>CL</span></div>
+          <div class="panelist-photo placeholder-box placeholder-avatar"><span>JB</span></div>
           <div class="panelist-info">
-            <h4>Calvin Alberto López Álvarez</h4>
-            <p class="panelist-role">Software Engineer / AI Developer · Rehabilitación con IA en Japón</p>
+            <h4>Jonathan Ulises Barrera Rueda</h4>
+            <p class="panelist-role">Ingeniero en Datos · AVASA (Hertz)</p>
             <span class="panelist-tag">Egresado IDIO</span>
           </div>
         </div>
         <div class="panelist-card glass animate-on-scroll">
-          <div class="panelist-photo placeholder-box placeholder-avatar"><span>LC</span></div>
+          <div class="panelist-photo placeholder-box placeholder-avatar"><span>DG</span></div>
           <div class="panelist-info">
-            <h4>Luis Fernando Cuellar Morales</h4>
-            <p class="panelist-role">Ingeniero de Datos / Analista</p>
-            <span class="panelist-tag">Egresado IDIO</span>
+            <h4>Diana Aimee Gutierrez May</h4>
+            <p class="panelist-role">Especialista de Datos · Royalton Riviera Cancún</p>
+            <span class="panelist-tag">Egresada IDIO</span>
           </div>
         </div>
       </div>
@@ -322,9 +358,10 @@
     <h2 class="section-title animate-on-scroll">Talleres Prácticos</h2>
     <p class="section-desc animate-on-scroll">Aprende haciendo — sesiones hands-on con expertos</p>
     <div class="workshops-grid">
-      <div class="workshop-card glass animate-on-scroll">
+      <div id="taller-1" class="workshop-card glass animate-on-scroll">
         <div class="workshop-header">
-          <img src="src/neme.png" alt="Antonio Neme" class="workshop-photo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+          <img src="src/neme.png" alt="Antonio Neme" class="workshop-photo"
+            style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
           <div class="workshop-badges">
             <span class="badge badge-nivel badge-avanzado">Avanzado</span>
             <span class="badge badge-req">💻 Llevar Laptop</span>
@@ -339,9 +376,10 @@
           </div>
         </div>
       </div>
-      <div class="workshop-card glass animate-on-scroll">
+      <div id="taller-2" class="workshop-card glass animate-on-scroll">
         <div class="workshop-header">
-          <img src="src/Candy.jpeg" alt="Candy Sansores" class="workshop-photo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+          <img src="src/Candy.jpeg" alt="Candy Sansores" class="workshop-photo"
+            style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
           <div class="workshop-badges">
             <span class="badge badge-nivel badge-intermedio">Intermedio</span>
             <span class="badge badge-req">💻 Llevar Laptop</span>
@@ -356,9 +394,10 @@
           </div>
         </div>
       </div>
-      <div class="workshop-card glass animate-on-scroll">
+      <div id="taller-3" class="workshop-card glass animate-on-scroll">
         <div class="workshop-header">
-          <img src="src/fernando-gomez.jpg" alt="Fernando Gómez" class="workshop-photo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+          <img src="src/fernando-gomez.jpg" alt="Fernando Gómez" class="workshop-photo"
+            style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
           <div class="workshop-badges">
             <span class="badge badge-nivel badge-intermedio">Intermedio</span>
             <span class="badge badge-req">💻 Llevar Laptop</span>
@@ -374,6 +413,10 @@
         </div>
       </div>
     </div>
+
+    <div style="text-align: center; margin-top: 3.5rem;" class="animate-on-scroll">
+      <a href="https://forms.gle/LMyeN5b4fwCTpzJe6" target="_blank" class="glow-btn">Asistencia Virtual</a>
+    </div>
   </section>
 
   <!-- ========== FERIA DE PROYECTOS ========== -->
@@ -384,8 +427,8 @@
       <div class="feria-layout animate-on-scroll">
         <div class="feria-text">
           <p class="feria-description">
-            Explora proyectos innovadores creados por estudiantes de la Universidad del Caribe. 
-            Desde aplicaciones de inteligencia artificial hasta soluciones de análisis de datos, 
+            Explora proyectos innovadores creados por estudiantes de la Universidad del Caribe.
+            Desde aplicaciones de inteligencia artificial hasta soluciones de análisis de datos,
             la feria es tu oportunidad de ver el talento en acción.
           </p>
           <ul class="feria-highlights">
@@ -394,10 +437,15 @@
             <li>💡 Demostraciones en vivo de prototipos</li>
             <li>🤝 Retroalimentación directa de jueces y visitantes</li>
           </ul>
-          <a href="#" class="glow-btn">Registra tu Proyecto</a>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+            <a href="https://forms.gle/eu8ERwEHZB5fWsEo9" target="_blank" class="glow-btn">Registra tu Proyecto</a>
+            <a href="src/Feria%20de%20Proyectos%20BASES.png" target="_blank" class="glow-btn"
+              style="background: linear-gradient(135deg, #7c4dff, var(--accent-cyan));">Ver bases</a>
+          </div>
         </div>
-        <div class="feria-image placeholder-box placeholder-feria">
-          <span>Flyer Feria de Proyectos</span>
+        <div class="feria-image">
+          <img src="src/Feria%20de%20Proyectos%201.png" alt="Flyer Feria de Proyectos"
+            style="width: 100%; max-width: 500px; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,229,255,0.15);">
         </div>
       </div>
     </div>
@@ -411,7 +459,11 @@
       <p class="section-desc animate-on-scroll">¿Tienes lo que se necesita? Pon a prueba tu cuerpo y tu código</p>
 
       <div class="rally-intro animate-on-scroll">
-        <p>El <strong>Rally DataDay</strong> es una competencia dinámica donde los equipos deberán superar una serie de estaciones que combinan <strong>retos físicos</strong> con <strong>desafíos técnicos y de programación</strong>. No basta con ser rápido — ¡también necesitas pensar!</p>
+        <p>El Departamento de Ciencias Básicas e Ingeniería, a través de Ingeniería en Datos e Inteligencia
+          Organizacional, invita a estudiantes y docentes del área de ingeniería a participar en el rally temático:
+          <strong>“The Data Race”</strong>, con el objetivo de fomentar la integración y el aprendizaje mediante retos
+          físicos, lógica de datos y acertijos. No basta con ser rápido — ¡también necesitas pensar!
+        </p>
       </div>
 
       <div class="rally-tracks">
@@ -432,10 +484,11 @@
           <div class="rally-track-icon">💻</div>
           <h3>Retos Técnicos</h3>
           <ul>
-            <li>🐍 Desafíos de programación en Python</li>
-            <li>🗄️ Consultas SQL contra reloj</li>
-            <li>🧠 Acertijos de lógica y algoritmos</li>
-            <li>📊 Mini retos de análisis de datos</li>
+            <li>🧹 Retos de limpieza y ordenamiento de datos</li>
+            <li>📊 Dinámicas de clasificación bajo reglas lógicas</li>
+            <li>💻 Desafíos de pensamiento algorítmico y condicionales</li>
+            <li>🌳 Resolución ágil de árboles de decisión</li>
+            <li>🔑 Acertijos para descifrar contraseñas ocultas</li>
           </ul>
         </div>
       </div>
@@ -444,7 +497,7 @@
         <div class="rally-detail-item">
           <span class="rally-detail-icon">👥</span>
           <div>
-            <strong>Equipos de 3–5 personas</strong>
+            <strong>Equipos de 3 integrantes</strong>
             <p>Forma tu equipo y regístrense juntos</p>
           </div>
         </div>
@@ -465,7 +518,8 @@
       </div>
 
       <div class="rally-cta animate-on-scroll">
-        <a href="#" class="glow-btn rally-btn">Inscribe a tu Equipo</a>
+        <a href="https://forms.gle/RBmacwRdBR7HbLCA6" target="_blank" class="glow-btn rally-btn">Inscribe a tu
+          Equipo</a>
       </div>
     </div>
   </section>
@@ -474,53 +528,26 @@
   <section id="comunidades" class="section comunidades">
     <h2 class="section-title animate-on-scroll">Comunidades Invitadas</h2>
     <p class="section-desc animate-on-scroll">Conecta con las comunidades tech de la región</p>
-    <div class="communities-grid">
-      <div class="community-card glass animate-on-scroll">
-        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
-        <h3>Comunidad Tech 1</h3>
-        <p>Comunidad de desarrollo de software y tecnología en Cancún</p>
-      </div>
-      <div class="community-card glass animate-on-scroll">
-        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
-        <h3>Comunidad Tech 2</h3>
-        <p>Grupo de entusiastas de datos e inteligencia artificial</p>
-      </div>
-      <div class="community-card glass animate-on-scroll">
-        <div class="community-logo placeholder-box placeholder-logo-sm"><span>Logo</span></div>
-        <h3>Comunidad Tech 3</h3>
-        <p>Red de profesionales de ciberseguridad del sureste</p>
+    <div class="communities-grid" style="display: flex; justify-content: center;">
+      <div class="community-card glass animate-on-scroll"
+        style="max-width: 800px; text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center; padding: 40px 30px;">
+        <div style="width: 100%; max-width: 350px; margin-bottom: 30px; display: flex; justify-content: center;">
+          <img src="src/ATD_cropped.jpeg" alt="Logo ATD"
+            style="width: 100%; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">
+        </div>
+        <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: var(--accent);">Agencia de Transformación Digital
+          (ATD)</h3>
+        <p style="margin-bottom: 15px; text-align: justify; line-height: 1.6;">La <strong>Agencia de Transformación
+            Digital (ATD)</strong> de Quintana Roo es la autoridad estatal encargada de liderar la política pública de
+          digitalización, innovación tecnológica y simplificación administrativa.</p>
+        <p style="text-align: justify; line-height: 1.6;">Para la comunidad de <strong>Ingeniería en Datos</strong>, la
+          ATD representa un ecosistema estratégico clave. Al concentrar y coordinar la transformación digital del
+          gobierno, ofrece oportunidades únicas para aplicar arquitecturas de datos, analítica y soluciones orientadas a
+          crear un gobierno moderno, transparente y centrado en la ciudadanía.</p>
       </div>
     </div>
   </section>
 
-  <!-- ========== PATROCINADORES ========== -->
-  <section id="patrocinadores" class="section patrocinadores">
-    <h2 class="section-title animate-on-scroll">Gracias a Nuestros Patrocinadores</h2>
-    <div class="sponsors-tier animate-on-scroll">
-      <h3 class="tier-title tier-gold">✦ Oro</h3>
-      <div class="sponsors-row">
-        <div class="sponsor-logo placeholder-box placeholder-sponsor"><span>Sponsor 1</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor"><span>Sponsor 2</span></div>
-      </div>
-    </div>
-    <div class="sponsors-tier animate-on-scroll">
-      <h3 class="tier-title tier-silver">✦ Plata</h3>
-      <div class="sponsors-row">
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 3</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 4</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-sm"><span>Sponsor 5</span></div>
-      </div>
-    </div>
-    <div class="sponsors-tier animate-on-scroll">
-      <h3 class="tier-title tier-bronze">✦ Bronce</h3>
-      <div class="sponsors-row">
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S6</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S7</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S8</span></div>
-        <div class="sponsor-logo placeholder-box placeholder-sponsor-xs"><span>S9</span></div>
-      </div>
-    </div>
-  </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
@@ -540,18 +567,29 @@
         <a href="#conferencias">Conferencias</a>
         <a href="#talleres">Talleres</a>
         <a href="#feria">Feria</a>
+        <a href="#rally">Rally</a>
+        <a href="#comunidades">Comunidades</a>
       </div>
       <div class="footer-social">
         <h4>Síguenos</h4>
         <div class="social-icons">
           <a href="#" aria-label="Facebook" class="social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
           </a>
           <a href="#" aria-label="Instagram" class="social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
           </a>
           <a href="#" aria-label="Twitter/X" class="social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -584,4 +622,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

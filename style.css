@@ -122,7 +122,7 @@ img{max-width:100%;display:block}
 
 /* ===== CONFERENCIAS ===== */
 .speakers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
-.speaker-card{display:flex;flex-direction:column;align-items:center;padding:30px 24px;text-align:center;transition:all .4s}
+.speaker-card{display:flex;flex-direction:column;align-items:center;padding:30px 24px;text-align:center;transition:all .4s; scroll-margin-top: 100px;}
 .speaker-card:hover{transform:translateY(-6px);box-shadow:0 8px 40px rgba(0,229,255,.15);border-color:rgba(0,229,255,.3)}
 .speaker-photo{margin-bottom:1rem}
 .speaker-info h3{font-family:var(--font-display);font-size:1rem;margin-bottom:.3rem;color:var(--accent-cyan)}
@@ -131,7 +131,7 @@ img{max-width:100%;display:block}
 .speaker-time{font-size:.8rem;color:var(--accent-teal)}
 
 /* ===== PANEL DE EGRESADOS ===== */
-.panel-egresados{margin-top:4rem;padding:3px;border-radius:20px;background:linear-gradient(135deg,var(--accent-cyan),var(--accent-teal),#7c4dff,var(--accent-cyan));background-size:300% 300%;animation:gradientShift 6s ease infinite}
+.panel-egresados{margin-top:4rem;padding:3px;border-radius:20px;background:linear-gradient(135deg,var(--accent-cyan),var(--accent-teal),#7c4dff,var(--accent-cyan));background-size:300% 300%;animation:gradientShift 6s ease infinite; scroll-margin-top: 100px;}
 @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .panel-egresados > .panel-header,
 .panel-egresados > .panel-grid{background:rgba(10,22,40,.95)}
@@ -149,7 +149,7 @@ img{max-width:100%;display:block}
 
 /* ===== TALLERES ===== */
 .workshops-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
-.workshop-card{overflow:hidden;transition:all .4s}
+.workshop-card{overflow:hidden;transition:all .4s; scroll-margin-top: 100px;}
 .workshop-card:hover{transform:translateY(-6px);box-shadow:0 8px 40px rgba(0,229,255,.15)}
 .workshop-header{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;background:rgba(0,229,255,.04);border-bottom:1px solid rgba(0,229,255,.1)}
 .workshop-badges{display:flex;flex-direction:column;gap:6px}

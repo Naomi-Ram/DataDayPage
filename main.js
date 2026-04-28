@@ -157,18 +157,24 @@ if (window.matchMedia('(hover: hover)').matches) {
 const backToTimelineBtn = document.getElementById('backToTimelineBtn');
 let savedScrollPosition = null;
 
+// Global helper called directly from timeline onclick handlers
+window.navigateToSection = function(href) {
+  savedScrollPosition = window.scrollY;
+  window.location.href = href;
+  setTimeout(() => {
+    if (backToTimelineBtn) backToTimelineBtn.classList.add('visible');
+  }, 1000);
+  return false;
+};
+
 if (backToTimelineBtn) {
-  // Show button when clicking a timeline card link
-  document.querySelectorAll('a.timeline-card').forEach(link => {
+  // Also catch plain <a class="timeline-card"> links with no onclick
+  document.querySelectorAll('a.timeline-card:not([onclick])').forEach(link => {
     link.addEventListener('click', () => {
-      // Small delay to let the smooth scroll happen first, then we record the position where they came from
-      // Actually, it's better to just save the current position right before jumping
       savedScrollPosition = window.scrollY;
-      
-      // Delay showing the button so it doesn't appear awkwardly during the scroll
       setTimeout(() => {
         backToTimelineBtn.classList.add('visible');
-      }, 500);
+      }, 1000);
     });
   });
 
@@ -186,13 +192,14 @@ if (backToTimelineBtn) {
 
   // Hide button if user manually scrolls back up to the horario section
   window.addEventListener('scroll', () => {
-    const horarioSection = document.getElementById('horario');
-    if (horarioSection && backToTimelineBtn.classList.contains('visible')) {
-      const rect = horarioSection.getBoundingClientRect();
-      // If the timeline section is currently visible in the viewport or above it
-      if (rect.bottom > 0) {
-         backToTimelineBtn.classList.remove('visible');
-         savedScrollPosition = null;
+    if (backToTimelineBtn.classList.contains('visible')) {
+      const conferenciasSection = document.getElementById('conferencias');
+      if (conferenciasSection) {
+        // Hide only if user scrolls above the Conferencias section
+        if (window.scrollY < conferenciasSection.offsetTop - 200) {
+           backToTimelineBtn.classList.remove('visible');
+           savedScrollPosition = null;
+        }
       }
     }
   }, { passive: true });

@@ -1,0 +1,66 @@
+Borrar la parte de moderador y poner una pequeña descripcion
+
+Panelistas:
+
+Diana Aimee Gutierrez May
+Jonathan Ulises Barrera Rueda
+Kevin Raymond Hernández
+Sofia Ruvalcaba De la Noval
+ 
+1. Bienvenida (2 minutos):  dar una breve introducción al panel y a la dinámica del mismo.
+
+2. Presentación de panelistas (12 min): cada panelista tendrá 3 minutos para presentarse indicando su nombre, generación, cuál fue su primer empleo después de egresar y cómo llegaron a su rol actual (indicar empresa y rol actual).
+
+3. Ronda de preguntas y respuestas: (2 panelistas por pregunta, 1.5 min para responder, 25 min. en total).
+·         ¿Cuál fue el mayor reto que enfrentaron al salir de la universidad y entrar al mundo laboral?
+·         ¿Qué herramientas, lenguajes o plataformas usan más en su día a día?
+·         ¿Qué habilidad consideran clave para destacar en su trabajo actual?
+·         ¿Cómo es trabajar en una empresa de datos o tecnología? ¿Qué fue lo que más les sorprendió?
+·         ¿Qué áreas del análisis de datos o inteligencia artificial están creciendo más en sus industrias?
+·         ¿Qué harían diferente si volvieran a estudiar en la Unicaribe?
+Esta última la responden todos:
+·         ¿Qué consejo le darías a los estudiantes que están por egresar o que buscan una oportunidad en datos?
+ 
+4. Preguntas del público: (20 minutos). Se permitirá a la audiencia plantear alguna pregunta a los panelistas.
+ 
+5. Cierre: (2 min.). Mensaje por parte del moderador y entrega de reconocimientos. 
+
+
+
+
+
+#DESCRIPCIONES
+
+
+-Sofia Ruvalcaba de la Noval
+
+He tenido experiencia como Game Developer y Full Stack Developer
+
+Actualmente trabajo en el IMPLAN de Cancún como Full Stack Developer
+Driven by a deep curiosity for how things work and how they can be innovated, I'm a passionate Data Engineer and Game Developer committed to building impactful and engaging experiences. My journey in software development has been one of continuous exploration – from crafting immersive game mechanics to architecting robust data pipelines and spearheading AI-powered solutions.
+
+I thrive on understanding complex problems deeply and collaborating to design thoughtful, well-crafted solutions. This approach extends to my belief that technology should be both practical and personal, making life easier and more connected. My experience reflects this, from contributing to large-scale systems and participating in hackathons to developing user-centric interfaces. Notably, I've applied my technical expertise to projects like the award-winning 'Hey Emma' AI assistant, where I focused on both backend functionality and intuitive frontend UI/UX, including prototyping with Figma, to achieve significant operational efficiencies.
+
+Always seeking the next challenge and the next thing to build, I'm eager to connect with opportunities in Software Engineering, Data Science, and Game Development where I can merge analytical rigor with creative vision to create innovative, user-friendly products. Let’s explore how we can build better, together!
+
+
+
+
+
+-Kevin Raymond Hernandez 
+con experiencia en business inteligence con qlik sense e ingeniero en datos con aws glue  en grupo ultra
+
+
+-Jonathan Ulises Barrera Rueda
+Ingeniero en Datos, con 3 años de experiencia en análisis y transformación de datos en los sectores turístico y de renta vehicular. Actualmente trabajando en AVASA (Hertz y marcas asociadas).
+
+-Diana Aimee Gutierrez May
+tengo 27 años y soy Ingeniera en Datos e Inteligencia Organizacional. Actualmente me desempeño como Especialista de Datos en Royalton Riviera Cancún, y anteriormente trabajé como Analista de Base de Datos en Grand Velas Riviera Maya. A lo largo de estos años he desarrollado una sólida experiencia en análisis estadístico, limpieza de datos, visualización estratégica y generación de reportes que impulsan decisiones clave en el sector hotelero.
+
+Lo que más disfruto es transformar datos en historias que revelan patrones, oportunidades y soluciones. Me apasiona el proceso completo: desde la recopilación y depuración hasta la interpretación y presentación visual. Creo firmemente que los datos bien contados pueden cambiar el rumbo de una estrategia.
+
+Soy una profesional ambiciosa, creativa y adaptable. Me involucro con distintos departamentos para entender sus necesidades y ofrecer soluciones personalizadas. Me encanta aprender, colaborar y aportar desde una visión analítica, empática y orientada a resultados.
+
+Actualmente estoy cursando una Maestría en Analítica e Inteligencia de Negocios, fortaleciendo mi capacidad para integrar herramientas avanzadas con pensamiento estratégico. Mi objetivo es seguir creciendo en el mundo del análisis de datos, creando impacto real y compartiendo conocimiento con autenticidad.
+
+
