@@ -155,22 +155,44 @@ if (window.matchMedia('(hover: hover)').matches) {
 
 // ===== FLOATING BACK BUTTON LOGIC =====
 const backToTimelineBtn = document.getElementById('backToTimelineBtn');
+const scheduleSection = document.getElementById('horario');
 let savedScrollPosition = null;
+let pendingBackButton = false;
+let backButtonLockedUntil = 0;
 
-if (backToTimelineBtn) {
-  // Show button when clicking a timeline card link
-  document.querySelectorAll('a.timeline-card').forEach(link => {
+function showBackToTimelineButton() {
+  if (backToTimelineBtn && savedScrollPosition !== null) {
+    backToTimelineBtn.classList.add('visible');
+  }
+}
+
+if (backToTimelineBtn && scheduleSection) {
+  // Capture every navigable card inside the schedule, including links that
+  // jump to a section on desktop and to a specific card on mobile.
+  scheduleSection.querySelectorAll('a.timeline-card[href^="#"]').forEach(link => {
     link.addEventListener('click', () => {
       savedScrollPosition = window.scrollY;
+      pendingBackButton = true;
+      backButtonLockedUntil = Date.now() + 1200;
+
       setTimeout(() => {
-        backToTimelineBtn.classList.add('visible');
-      }, 1000);
+        if (pendingBackButton) {
+          showBackToTimelineButton();
+        }
+      }, 500);
     });
+  });
+
+  window.addEventListener('hashchange', () => {
+    if (pendingBackButton) {
+      showBackToTimelineButton();
+    }
   });
 
   // Handle clicking the back button
   backToTimelineBtn.addEventListener('click', () => {
     if (savedScrollPosition !== null) {
+      pendingBackButton = false;
       window.scrollTo({
         top: savedScrollPosition,
         behavior: 'smooth'
@@ -182,13 +204,16 @@ if (backToTimelineBtn) {
 
   // Hide button if user manually scrolls back up to the horario section
   window.addEventListener('scroll', () => {
+    if (Date.now() < backButtonLockedUntil) {
+      return;
+    }
+
     if (backToTimelineBtn.classList.contains('visible')) {
-      const conferenciasSection = document.getElementById('conferencias');
-      if (conferenciasSection) {
-        if (window.scrollY < conferenciasSection.offsetTop - 200) {
-           backToTimelineBtn.classList.remove('visible');
-           savedScrollPosition = null;
-        }
+      const scheduleBottom = scheduleSection.offsetTop + scheduleSection.offsetHeight - 220;
+      if (window.scrollY <= scheduleBottom) {
+        backToTimelineBtn.classList.remove('visible');
+        pendingBackButton = false;
+        savedScrollPosition = null;
       }
     }
   }, { passive: true });
