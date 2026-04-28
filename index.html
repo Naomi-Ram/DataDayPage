@@ -133,7 +133,7 @@
       <!-- 10:10 -->
       <div class="timeline-item animate-on-scroll" data-type="conferencia">
         <div class="timeline-time">10:10</div>
-        <a href="#conferencias" onclick="return navigateToSection('#conferencias');" class="timeline-card glass clickable" style="display:block;">
+        <a href="#conferencias" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
           <h3>Visualización de datos multidimensionales con redes neuronales</h3>
           <p>Ponente: <strong>Dr. Antonio Neme</strong>.
@@ -156,7 +156,7 @@
       <!-- 11:00 (Taller simultáneo) -->
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">11:00</div>
-        <a href="#taller-1" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-1');" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-1" onclick="if(window.innerWidth >= 768) { window.location.href='#talleres'; return false; }" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 1. Aplicaciones de la visualización de datos multidimensionales con redes neuronales</h3>
           <p>Instructor: <strong>Dr. Antonio Neme.</strong>
@@ -179,7 +179,7 @@
       <!-- 12:00 (Talleres simultáneos) -->
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">12:00</div>
-        <a href="#taller-2" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-2');" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-2" onclick="if(window.innerWidth >= 768) { window.location.href='#talleres'; return false; }" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 2. Interpretación de modelos de aprendizaje automático con SHAP</h3>
           <p>Instructora: <strong>Dra. Candy Sansores.</strong></p>
@@ -190,7 +190,7 @@
       </div>
       <div class="timeline-item animate-on-scroll" data-type="taller">
         <div class="timeline-time">12:00</div>
-        <a href="#taller-3" onclick="return navigateToSection(window.innerWidth >= 768 ? '#talleres' : '#taller-3');" class="timeline-card glass clickable" style="display:block;">
+        <a href="#taller-3" onclick="if(window.innerWidth >= 768) { window.location.href='#talleres'; return false; }" class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-taller">🛠️ Taller</span>
           <h3>Taller 3. Del dato a la decisión: aplicaciones del Aprendizaje supervisado</h3>
           <p>Instructor: <strong>Dr. Fernando Gómez.</strong></p>
@@ -224,7 +224,7 @@
       <div class="timeline-item animate-on-scroll" data-type="conferencia">
         <div class="timeline-time">16:00</div>
         <a href="#conf-dimas"
-          onclick="return navigateToSection(window.innerWidth >= 768 ? '#conferencias' : '#conf-dimas');"
+          onclick="if(window.innerWidth >= 768) { window.location.href='#conferencias'; return false; }"
           class="timeline-card glass clickable" style="display:block;">
           <span class="timeline-badge badge-conferencia">🎤 Conferencia</span>
           <h3>De datos a decisiones: cómo los AI agents están cambiando el trabajo del desarrollador.</h3>

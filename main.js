@@ -157,19 +157,9 @@ if (window.matchMedia('(hover: hover)').matches) {
 const backToTimelineBtn = document.getElementById('backToTimelineBtn');
 let savedScrollPosition = null;
 
-// Global helper called directly from timeline onclick handlers
-window.navigateToSection = function(href) {
-  savedScrollPosition = window.scrollY;
-  window.location.href = href;
-  setTimeout(() => {
-    if (backToTimelineBtn) backToTimelineBtn.classList.add('visible');
-  }, 1000);
-  return false;
-};
-
 if (backToTimelineBtn) {
-  // Also catch plain <a class="timeline-card"> links with no onclick
-  document.querySelectorAll('a.timeline-card:not([onclick])').forEach(link => {
+  // Show button when clicking a timeline card link
+  document.querySelectorAll('a.timeline-card').forEach(link => {
     link.addEventListener('click', () => {
       savedScrollPosition = window.scrollY;
       setTimeout(() => {
@@ -195,7 +185,6 @@ if (backToTimelineBtn) {
     if (backToTimelineBtn.classList.contains('visible')) {
       const conferenciasSection = document.getElementById('conferencias');
       if (conferenciasSection) {
-        // Hide only if user scrolls above the Conferencias section
         if (window.scrollY < conferenciasSection.offsetTop - 200) {
            backToTimelineBtn.classList.remove('visible');
            savedScrollPosition = null;
