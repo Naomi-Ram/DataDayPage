@@ -99,6 +99,7 @@ const modalEls = {
   title: document.getElementById('modalTitle'),
   speaker: document.getElementById('modalSpeaker'),
   role: document.getElementById('modalRole'),
+  image: document.getElementById('modalImage'),
   bio: document.getElementById('modalBio'),
   time: document.getElementById('modalTime'),
   location: document.getElementById('modalLocation'),
@@ -109,6 +110,15 @@ function openModal(card) {
   modalEls.title.textContent = card.dataset.modalTitle || '';
   modalEls.speaker.textContent = card.dataset.modalSpeaker || '';
   modalEls.role.textContent = card.dataset.modalRole || '';
+  
+  if (card.dataset.modalImage && modalEls.image) {
+    modalEls.image.src = card.dataset.modalImage;
+    modalEls.image.style.display = 'block';
+  } else if (modalEls.image) {
+    modalEls.image.src = '';
+    modalEls.image.style.display = 'none';
+  }
+
   modalEls.bio.textContent = card.dataset.modalBio || '';
   modalEls.time.textContent = card.dataset.modalTime ? '🕐 ' + card.dataset.modalTime : '';
   modalEls.location.textContent = card.dataset.modalLocation ? '📍 ' + card.dataset.modalLocation : '';
